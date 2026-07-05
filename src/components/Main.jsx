@@ -2,6 +2,16 @@ import { Subtitle } from "./Subtitle";
 import { Paragraph } from "./Paragraph";
 import { Image } from "./Image";
 import { Button } from "./Button";
+import imageComputer from "../assets/image-computer.png";
+import imageDevices from "../assets/image-devices.png";
+import iconBlacklist from "../assets/icon-blacklist.svg";
+import iconText from "../assets/icon-text.svg";
+import iconPreview from "../assets/icon-preview.svg";
+import logoGoogle from "../assets/logo-google.png";
+import logoIbm from "../assets/logo-ibm.png";
+import logoMicrosoft from "../assets/logo-microsoft.png";
+import logoHp from "../assets/logo-hp.png";
+import logoVectorGraphics from "../assets/logo-vector-graphics.png";
 
 export function Main() {
   return (
@@ -29,10 +39,7 @@ function MainFeatures() {
   return (
     <section className="main-features">
       <div className="feature-img">
-        <Image
-          src="./src/assets/image-computer.png"
-          alt="Image of a computer"
-        />
+        <Image src={imageComputer} alt="Image of a computer" />
       </div>
       <div className="features-container">
         <div className="feature">
@@ -75,10 +82,7 @@ function AcessClipboardSection() {
         <Paragraph content="Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks." />
       </div>
       <div className="feature-img">
-        <Image
-          src="./src/assets/image-devices.png"
-          alt="Image of a tablet and a phone"
-        />
+        <Image src={imageDevices} alt="Image of a tablet and a phone" />
       </div>
     </section>
   );
@@ -94,7 +98,7 @@ function SuperchargeWorkflowSection() {
       <div className="supercharge-workflow-tools">
         <div className="tool">
           <Tool
-            src="./src/assets/icon-blacklist.svg"
+            src={iconBlacklist}
             alt="Icon of a blacklist"
             title="Create blacklists"
             description="Ensure sensitive information never makes its way to your clipboard by excluding certain sources."
@@ -102,7 +106,7 @@ function SuperchargeWorkflowSection() {
         </div>
         <div className="tool">
           <Tool
-            src="./src/assets/icon-text.svg"
+            src={iconText}
             alt="Icon of an A with the cursor next to it"
             title="Plain text snippets"
             description="Remove unwanted formatting from copied text for a consistent look."
@@ -110,7 +114,7 @@ function SuperchargeWorkflowSection() {
         </div>
         <div className="tool">
           <Tool
-            src="./src/assets/icon-preview.svg"
+            src={iconPreview}
             alt="Sneak preview"
             title="Sneak preview"
             description="Quick preview of all snippets on your Clipboard for easy access."
@@ -134,17 +138,11 @@ function Tool({ src, alt, title, description }) {
 function EnterprisesSection() {
   return (
     <section className="enterprises-section">
-      <Image src="./src/assets/logo-google.png" alt="Logo of Google" />
-      <Image src="./src/assets/logo-ibm.png" alt="Logo of IBM" />
-      <Image src="./src/assets/logo-microsoft.png" alt="Logo of Microsoft" />
-      <Image
-        src="./src/assets/logo-hp.png"
-        alt="Logo of Hewlett Packard Enterprise"
-      />
-      <Image
-        src="./src/assets/logo-vector-graphics.png"
-        alt="Logo of Vector Graphics"
-      />
+      <Image src={logoGoogle} alt="Logo of Google" />
+      <Image src={logoIbm} alt="Logo of IBM" />
+      <Image src={logoMicrosoft} alt="Logo of Microsoft" />
+      <Image src={logoHp} alt="Logo of Hewlett Packard Enterprise" />
+      <Image src={logoVectorGraphics} alt="Logo of Vector Graphics" />
     </section>
   );
 }

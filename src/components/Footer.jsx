@@ -1,4 +1,7 @@
-import { Logo } from "./Header";
+import { Logo } from "./header";
+import iconFacebook from "../assets/icon-facebook.svg";
+import iconInstagram from "../assets/icon-instagram.svg";
+import iconTwitter from "../assets/icon-twitter.svg";
 
 export function Footer() {
   return (
@@ -18,9 +21,9 @@ export function Footer() {
         </nav>
       </div>
       <div className="social-network">
-        <img src="./src/assets/icon-facebook.svg" alt="Icon of Facebook" />
-        <img src="./src/assets/icon-instagram.svg" alt="Icon of Instagram" />
-        <img src="./src/assets/icon-twitter.svg" alt="Icon of Twitter" />
+        <img src={iconFacebook} alt="Icon of Facebook" />
+        <img src={iconInstagram} alt="Icon of Instagram" />
+        <img src={iconTwitter} alt="Icon of Twitter" />
       </div>
     </footer>
   );

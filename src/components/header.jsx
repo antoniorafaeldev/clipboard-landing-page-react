@@ -1,5 +1,6 @@
 import { Button } from "./Button";
 import { Paragraph } from "./Paragraph";
+import logo from "../assets/logo.svg";
 
 export function Header() {
   return (
@@ -20,7 +21,7 @@ export function Header() {
 }
 
 export function Logo() {
-  return <img src="./src/assets/logo.svg" width="125px" height="125px" />;
+  return <img src={logo} width="125px" height="125px" />;
 }
 
 function Title() {
